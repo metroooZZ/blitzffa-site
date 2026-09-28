@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080d16" />
+    <meta name="description" content="BlitzFFA is a DiamondFFA Minecraft server with custom weapons, custom-made plugins, and new twists on the FFA experience." />
+    <title>BlitzFFA — DiamondFFA, Reimagined</title>
+    <link rel="icon" href="assets/blitzffa-icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scene" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <a class="brand-small" href="#top" aria-label="BlitzFFA home">
+          <img src="assets/blitzffa-icon.png" alt="" width="58" height="58" />
+        </a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#top" aria-current="page">Home</a>
+          <a href="#information">Information</a>
+          <a href="#staff">Staff</a>
+          <a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Applications <span aria-hidden="true">↗</span></a>
+          <a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Rules <span aria-hidden="true">↗</span></a>
+        </nav>
+        <a class="header-discord" href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Join Discord <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="#top">Home</a>
+        <a href="#information">Information</a>
+        <a href="#staff">Staff</a>
+        <a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Applications ↗</a>
+        <a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Rules ↗</a>
+        <a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Join Discord ↗</a>
+      </nav>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-heading">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Your next fight starts here</p>
+            <h1 id="hero-title"><img src="assets/blitzffa-wordmark.png" alt="BlitzFFA" width="255" height="50" /></h1>
+            <p class="hero-subtitle">DIAMOND FFA. A WHOLE NEW EXPERIENCE.</p>
+            <div class="server-status" id="server-status" role="status" aria-live="polite">
+              <span class="server-status__dot" aria-hidden="true"></span>
+              <span id="player-count">Checking player count…</span>
+              <span class="server-status__divider" aria-hidden="true"></span>
+              <button class="server-status__address" id="copy-server-ip" type="button" title="Copy Minecraft server address">blitzffa.net <span aria-hidden="true">⧉</span></button>
+            </div>
+          </div>
+
+          <div class="feature-grid" aria-label="Explore BlitzFFA">
+            <a class="feature-card feature-card--pink" href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer" aria-label="Applications — open Discord">
+              <span class="feature-card__topline">01 / GET INVOLVED</span>
+              <strong class="feature-card__title">Applications</strong>
+              <span class="feature-card__action">Click to view <span aria-hidden="true">↗</span></span>
+              <span class="feature-card__bottom">Join the BlitzFFA team</span>
+              <img class="feature-card__art feature-card__art--applications" src="assets/applications.png" alt="" loading="eager" />
+            </a>
+
+            <a class="feature-card feature-card--purple" href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer" aria-label="Rules — open Discord">
+              <span class="feature-card__topline">02 / PLAY FAIR</span>
+              <strong class="feature-card__title">Rules</strong>
+              <span class="feature-card__action">Click to view <span aria-hidden="true">↗</span></span>
+              <span class="feature-card__bottom">Everything you need to know</span>
+              <img class="feature-card__art feature-card__art--rules" src="assets/rules.png" alt="" loading="eager" />
+            </a>
+
+            <a class="feature-card feature-card--gold" href="#information" aria-label="Information — learn about BlitzFFA">
+              <span class="feature-card__topline">03 / THE SERVER</span>
+              <strong class="feature-card__title">Information</strong>
+              <span class="feature-card__action">Discover BlitzFFA <span aria-hidden="true">↓</span></span>
+              <span class="feature-card__bottom">A new take on DiamondFFA</span>
+              <img class="feature-card__art feature-card__art--information" src="assets/information.png" alt="" loading="eager" />
+            </a>
+          </div>
+
+          <div class="hero-actions">
+            <a class="hero-action hero-action--cyan" href="#information"><span class="hero-action__label">Explore</span><strong>BlitzFFA</strong><span class="hero-action__arrow" aria-hidden="true">↓</span></a>
+            <a class="hero-action hero-action--indigo" href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer"><span class="hero-action__icon" aria-hidden="true">●</span><strong>Join our Discord</strong><span class="hero-action__arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="information" id="information" aria-labelledby="information-title">
+          <div class="information__intro">
+            <p class="section-kicker">ABOUT THE SERVER / 001</p>
+            <h2 id="information-title">Not your usual <span>DiamondFFA.</span></h2>
+            <p>BlitzFFA takes the fast-paced DiamondFFA experience and builds on it. Expect familiar FFA combat with fresh ideas, custom weapons, and plugins made for the server.</p>
+          </div>
+          <div class="info-grid">
+            <article class="info-tile"><span class="info-tile__number">01</span><h3>DiamondFFA at heart</h3><p>Jump into the action and make every fight count. The core you know, with more to discover.</p></article>
+            <article class="info-tile"><span class="info-tile__number">02</span><h3>Custom weapons</h3><p>Go beyond the standard loadout with weapons crafted to make combat feel different.</p></article>
+            <article class="info-tile"><span class="info-tile__number">03</span><h3>Custom-made plugins</h3><p>Server features built specifically for BlitzFFA, bringing new twists to the FFA formula.</p></article>
+          </div>
+          <div class="information__cta">
+            <div><p class="section-kicker">READY TO JOIN?</p><h3>See you in the arena.</h3></div>
+            <a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Join the community <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="staff" id="staff" aria-labelledby="staff-title">
+          <div class="staff__heading">
+            <p class="section-kicker">THE PEOPLE BEHIND BLITZFFA / 002</p>
+            <h2 id="staff-title">Meet the <span>team.</span></h2>
+            <p>From building new features to keeping the community running, the BlitzFFA team is here for the players.</p>
+          </div>
+          <div class="staff-grid">
+            <a class="staff-card staff-card--owner" href="https://discord.com/users/1546470710317285408" target="_blank" rel="noopener noreferrer" aria-label="View the BlitzFFA owner's Discord profile">
+              <span class="staff-card__number">01 / LEADERSHIP</span>
+              <span class="staff-card__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="m8 21 12 11 12-18 12 18 12-11-6 28H14L8 21Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 55h28M32 37v5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+              <span class="staff-card__role">Owner</span>
+              <span class="staff-card__caption">Leading the vision for BlitzFFA.</span>
+              <span class="staff-card__link">View Discord profile <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="staff-card staff-card--overseer" href="https://discord.com/users/1546580309498142770" target="_blank" rel="noopener noreferrer" aria-label="View the BlitzFFA overseer's Discord profile">
+              <span class="staff-card__number">02 / OVERSIGHT</span>
+              <span class="staff-card__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="M32 6 51 14v14c0 14-9 23-19 30C22 51 13 42 13 28V14L32 6Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M19 30s5-7 13-7 13 7 13 7-5 7-13 7-13-7-13-7Z" stroke="currentColor" stroke-width="2.8"/><circle cx="32" cy="30" r="3.5" fill="currentColor"/></svg></span>
+              <span class="staff-card__role">Overseer</span>
+              <span class="staff-card__caption">Looking after the big picture.</span>
+              <span class="staff-card__link">View Discord profile <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="staff-card staff-card--manager" href="https://discord.com/users/1546473608103207002" target="_blank" rel="noopener noreferrer" aria-label="View the BlitzFFA manager's Discord profile">
+              <span class="staff-card__number">03 / OPERATIONS</span>
+              <span class="staff-card__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><rect x="14" y="13" width="36" height="45" rx="4" stroke="currentColor" stroke-width="3"/><path d="M25 13v-3a7 7 0 0 1 14 0v3M23 29h18M23 39h18M23 49h11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
+              <span class="staff-card__role">Manager</span>
+              <span class="staff-card__caption">Keeping things moving every day.</span>
+              <span class="staff-card__link">View Discord profile <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="staff-card staff-card--developer" href="https://discord.com/users/1547593940385931274" target="_blank" rel="noopener noreferrer" aria-label="View the BlitzFFA developer's Discord profile">
+              <span class="staff-card__number">04 / DEVELOPMENT</span>
+              <span class="staff-card__icon" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none"><path d="m24 18-14 14 14 14m16-28 14 14-14 14m-5-33-6 38" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span class="staff-card__role">Developer</span>
+              <span class="staff-card__caption">Building the features behind the fight.</span>
+              <span class="staff-card__link">View Discord profile <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer"><img src="assets/blitzffa-icon.png" alt="" width="39" height="39" /><span>BlitzFFA</span><small>DiamondFFA, reimagined.</small><a href="https://discord.gg/blitzffa" target="_blank" rel="noopener noreferrer">Discord ↗</a></footer>
+    </div>
+  </body>
+</html>
